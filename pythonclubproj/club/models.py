@@ -11,7 +11,7 @@ class Meeting(models.Model):
     location=models.CharField(max_length=255)
     agenda=models.TextField()
     def __str__(self):
-        return self.typename
+        return self.meetingtitle
     
     class Meta:
         db_table='meeting'

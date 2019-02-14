@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--This is a comment-->
+
+<h2> Resources </h2>
+<table class='table'>
+    <tr>
+        <th>Title</th>
+        <th>Agenda</th>
+
+    </tr>
+    {% for item in meetings_list %}
+    <tr>
+            <td>{{ item.meetingtitle }}</td>
+            <td>{{ item.agenda }}</td>
+    
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
