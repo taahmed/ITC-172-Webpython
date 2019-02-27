@@ -2,7 +2,7 @@
 {% block content %}
 <!--This is a comment-->
 
-<h2> Resources </h2>
+<h2> Meetings </h2>
 <table class='table'>
     <tr>
         <th>Title</th>
@@ -11,7 +11,7 @@
     </tr>
     {% for item in meetings_list %}
     <tr>
-            <td>{{ item.meetingtitle }}</td>
+            <td><a href="{% url 'details' id=item.id %}">{{ item.meetingtitle }}</a></td>
             <td>{{ item.agenda }}</td>
     
         </tr>
