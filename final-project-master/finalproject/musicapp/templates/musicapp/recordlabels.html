@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--This is a comment-->
+
+<h2> RecordLabels </h2>
+<table class='table'>
+    <tr>
+        <th>recordname</th>
+        <th>recorddate</th>
+
+    </tr>
+    {% for item in resources_list %}
+    <tr>
+            <td>{{ item.recordname }}</td>
+            <td>{{ item.recorddate }}</td>
+    
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

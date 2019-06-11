@@ -1,0 +1,18 @@
+<!DOCTYPE html> {% extends 'base.html' %} {% block content %}
+<h2>Music Tracks</h2>
+
+<table class="table">
+
+    <tr>
+        <th>Track Name</th>
+        <th>Description</th>
+
+    </tr>
+    {% for hiphopTracks in tracks_list %}
+    <tr>
+        <td>{{ hiphopTracks.trackname }}</td>
+        <td>{{ hiphopTracks.trackdescription }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

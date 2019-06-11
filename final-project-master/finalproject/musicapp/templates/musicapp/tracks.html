@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--This is a comment-->
+
+<h2> Tracks </h2>
+<table class='table'>
+    <tr>
+        <th>TrackTitle</th>
+        <th>TrackType</th>
+
+    </tr>
+    {% for item in tracktitle_list %}
+    <tr>
+            <td>{{ item.tracktitle }}</td>
+            <td>{{ item.tracktype }}</td>
+    
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
